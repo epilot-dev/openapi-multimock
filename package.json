@@ -1,0 +1,41 @@
+{
+  "name": "openapi-multimock",
+  "version": "1.0.0",
+  "description": "A mock tool to mock multiple APIs with OAS definitions",
+  "main": "src/index.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "nodemon -w ./src --exec npm start",
+    "start": "src/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@gitlab.com/e-pilot/platform/openapi-multimock.git"
+  },
+  "bin": {
+    "openapi-multimock": "./src/index.js"
+  },
+  "keywords": [
+    "Docker",
+    "Openapi",
+    "mock",
+    "tests"
+  ],
+  "author": "Sascha Just <s.just@epilot.cloud>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://gitlab.com/e-pilot/platform/openapi-multimock/issues"
+  },
+  "homepage": "https://gitlab.com/e-pilot/platform/openapi-multimock#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "minimist": "^1.2.5",
+    "morgan": "^1.10.0",
+    "openapi-backend": "^4.1.0"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.12",
+    "prettier": "^2.3.2"
+  }
+}
