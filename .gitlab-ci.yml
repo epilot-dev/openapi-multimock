@@ -1,0 +1,7 @@
+variables:
+  DOCKER_IMAGE: openapi-multimock
+
+include:
+  - project: 'e-pilot/platform/epilot-ci'
+    ref: '1.10.0'
+    file: 'gitlab/ci.docker.yml'
