@@ -36,6 +36,7 @@ const main = async () => {
     msgs.push(`api mock listening at http://localhost:${port}${path}`);
   }
 
+  app.use('/', (req, res) => res.status(200).json({ success: true }));
   // start server
   msgs.map((msg) => console.info(msg));
   app.listen(port, () => console.info('ready'));
