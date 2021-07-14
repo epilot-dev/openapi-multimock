@@ -2,12 +2,12 @@
   "name": "openapi-multimock",
   "version": "1.0.0",
   "description": "A mock tool to mock multiple APIs with OAS definitions",
-  "main": "src/index.js",
+  "main": "server.js",
   "type": "module",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "nodemon -w ./src --exec npm start",
-    "start": "src/index.js"
+    "start": "./server.js"
   },
   "repository": {
     "type": "git",
@@ -18,7 +18,7 @@
   },
   "keywords": [
     "Docker",
-    "Openapi",
+    "openapi",
     "mock",
     "tests"
   ],

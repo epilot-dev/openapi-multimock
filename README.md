@@ -9,7 +9,7 @@ openapi-multimock <path>:<definition> [<path>:<definition>]
 ## Docker Usage
 
 ```sh 
-docker run -p 5000 openapi-multimock <path>:<definition> [<path>:<definition>] 
+docker run -p 5000 -e APIS=<path>:<definition>,[<path>:<definition>]  openapi-multimock
 ```
 ## Docker-Compose Usage
 
