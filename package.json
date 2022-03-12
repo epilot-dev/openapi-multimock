@@ -22,7 +22,7 @@
     "mock",
     "tests"
   ],
-  "author": "Sascha Just <s.just@epilot.cloud>",
+  "author": "epilot GmbH",
   "license": "MIT",
   "bugs": {
     "url": "https://gitlab.com/e-pilot/platform/openapi-multimock/issues"
