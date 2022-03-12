@@ -7,7 +7,7 @@ import { OpenAPIBackend } from 'openapi-backend';
 const argv = minimist(process.argv.slice(2), { alias: { p: 'port' } });
 
 const args = argv._;
-const port = argv.port || 5000;
+const port = argv.port || process.env.PORT || 5050;
 
 const main = async () => {
   const app = express();

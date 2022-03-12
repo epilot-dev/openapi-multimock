@@ -1,16 +1,26 @@
 # OpenAPI Multimock
 A mock tool to mock multiple APIs with OAS definitions
 
-## Usage 
+## Usage
 
 ```sh
-openapi-multimock <path>:<definition> [<path>:<definition>]
+npx openapi-multimock [-p <PORT>] <path>:<definition> [<path>:<definition>]
 ```
+
+Example:
+
+```sh
+$ npx openapi-multimock /petstore:https://petstore3.swagger.io/api/v3/openapi.json /user:https://docs.api.epilot.io/user.yaml
+api mock listening at http://localhost:5050/petstore
+api mock listening at http://localhost:5050/user
+```
+
 ## Docker Usage
 
-```sh 
-docker run -p 5000 -e APIS=<path>:<definition>,[<path>:<definition>]  openapi-multimock
+```sh
+docker run -p 5050 -e APIS=<path>:<definition>,[<path>:<definition>] openapi-multimock
 ```
+
 ## Docker-Compose Usage
 
 ```yaml
@@ -21,5 +31,5 @@ services:
     environment:
       APIS: /entity:https://docs.api.epilot.io/entity.yaml,/internal-auth:https://docs.api.epilot.io/internal-auth.yaml
     ports:
-      - 5000
+      - 5050
 ```
