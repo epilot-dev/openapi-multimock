@@ -1,5 +1,5 @@
 # OpenAPI Multimock
-[![CI](https://github.com/epilot-dev/openapi-multimock/workflows/CI/badge.svg)](https://github.com/epilot-dev/openapi-multimock/actions?query=workflow%3ACI)
+[![CI](https://github.com/epilot-dev/openapi-multimock/actions/workflows/node.js.yml/badge.svg)](https://github.com/epilot-dev/openapi-multimock/actions?query=workflow%3ACI)
 [![npm version](https://img.shields.io/npm/v/openapi-multimock.svg)](https://www.npmjs.com/package/openapi-multimock)
 [![License](http://img.shields.io/:license-mit-blue.svg)](https://github.com/epilot-dev/openapi-multimock/blob/main/LICENSE)
 
