@@ -1,6 +1,6 @@
 {
   "name": "openapi-multimock",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A mock tool to mock multiple APIs with OAS definitions",
   "main": "server.js",
   "type": "module",
@@ -14,7 +14,7 @@
     "url": "git+ssh://git@gitlab.com/e-pilot/platform/openapi-multimock.git"
   },
   "bin": {
-    "openapi-multimock": "./src/index.js"
+    "openapi-multimock": "./server.js"
   },
   "keywords": [
     "Docker",
